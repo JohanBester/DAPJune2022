@@ -40,11 +40,20 @@ def myFunc():
 myFunc()
 
 
-def myFunc2(s):
+def myFunc2():
+    s = "Fantastic"
     print("Python is " + s)
 
 
-myFunc2("Fantastic")
+myFunc2()
+
+
+def myFunc3(s):
+    print("Python is " + s)
+
+
+myFunc3("Amazing")
+
 
 t = int(20.5)
 print(t)
