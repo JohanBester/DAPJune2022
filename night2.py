@@ -20,6 +20,7 @@ thisList = ["apple", "banana", "cherry"]
 
 # tropical = ["mango", "pineapple", "papaya"]
 # thisList.extend(tropical)
+
 # thisList.remove("banana")
 # thisList.pop(1)
 # thisList.pop()
