@@ -8,6 +8,7 @@
 # Stored locally at ... C:\Users\jbest\OneDrive\WORK RELATED\03_SAVVY Files\2022_June_DAP\Coursera_Python\words.txt
 
 # Use words.txt as the file name
+
 fname = input("Enter file name: ")
 try:
     fh = open(fname, 'r')

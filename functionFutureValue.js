@@ -1,3 +1,4 @@
+// Compound interest
 function futureValue(p, r, n, t, i) {
   let amount = 0;
   let principle = p;
