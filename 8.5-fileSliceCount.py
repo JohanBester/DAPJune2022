@@ -13,7 +13,7 @@
 #   cwen@iupui.edu
 #   There were 27 lines in the file with From as the first word
 
-# You can download the sample data at http://www.py4e.com/code3/mbox-short.txt
+# You can download sample data at http://www.py4e.com/code3/mbox-short.txt
 
 # file found locally at samples\mboxShort.txt
 
