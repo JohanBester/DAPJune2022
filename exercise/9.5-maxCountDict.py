@@ -10,7 +10,7 @@
 
 name = input("Enter file:")
 if len(name) < 1:
-    name = "mboxShort.txt"
+    name = "samples\mboxShort.txt"
 
 nameList = list()
 counts = dict()
