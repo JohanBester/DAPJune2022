@@ -45,45 +45,22 @@ import urllib.request
 import urllib.parse
 import urllib.error
 import json
-import ssl
 
-# Ignore SSL certificate errors
-ctx = ssl.create_default_context()
-ctx.check_hostname = False
-ctx.verify_mode = ssl.CERT_NONE
-
-#   Get address for search
-address = input("Enter location: ")
-if len(address) < 1:
-    #   Just enter to activate this default variable
-    address = "South Federal University"
-elif len(address) >= 1:
-    #   Press any character and Enter to activate this default variable
-    address = "University of Michigan"
-
-# Build URL for API endpoint call
 serviceURL = "http://py4e-data.dr-chuck.net/json?"
 api_key = "42"
-params = dict()
-params["key"] = api_key
-params["address"] = address
-url = serviceURL + urllib.parse.urlencode(params)
 
+address = input("Enter location: ")
+if len(address) < 1:
+    address = "South Federal University"
+elif len(address) >= 1:
+    address = "University of Michigan"
+
+url = serviceURL+urllib.parse.urlencode({"address": address, "key": api_key})
 print("Retrieving", url)
 
-jsonData = urllib.request.urlopen(url, context=ctx).read().decode()
+jsonData = urllib.request.urlopen(url).read().decode()
 print("Retrieved", len(jsonData), "characters")
 
-try:
-    info = json.loads(jsonData)
-
-    if not info or "status" not in info or info["status"] != "OK":
-        print("==== Failure To Retrieve ====")
-        print(json.dumps(jsonData, indent=4))
-    else:
-        place_id = info["results"][0]["place_id"]
-        print("Place id", place_id)
-
-except:
-    info = None
-    print("Raw JSON return", jsonData)
+info = json.loads(jsonData)
+place_id = info["results"][0]["place_id"]
+print("Place id", place_id)
