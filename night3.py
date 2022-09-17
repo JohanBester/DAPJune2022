@@ -1,8 +1,5 @@
 # ====== TUPLES
 
-from concurrent.futures.process import _global_shutdown
-
-
 thisTuple = ("anApple", "aBanana", "laCherry")
 fruits = ("apple", "banana", "cherry")
 
@@ -30,11 +27,7 @@ thisSet.update(myList)
 # print("thisSet3", thisSet)
 
 # ====== DICTIONARIES
-thisDic = {
-    "brand": "Ford",
-    "model": "Mustang",
-    "year": "1964"
-}
+thisDic = {"brand": "Ford", "model": "Mustang", "year": "1964"}
 
 # print("thisDic", thisDic)
 # print("thisDic-brand", thisDic["brand"])
@@ -49,8 +42,8 @@ thisDic["year"] = "2018"
 thisDic["color"] = "red"
 # print("thisDic", thisDic)
 
-thisDic.pop("brand")    # remove brand
-thisDic.popitem()   # remove color
+thisDic.pop("brand")  # remove brand
+thisDic.popitem()  # remove color
 # print("thisDic", thisDic)
 
 # ========= IF STATEMENTS
@@ -66,7 +59,7 @@ c = d = 55
 #     print("c and d are equal")
 
 e = 200
-f = e/4
+f = e / 4
 # if f > e:
 #     print("f is greater than e")
 # elif f == e:

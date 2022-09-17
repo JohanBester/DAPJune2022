@@ -1,43 +1,68 @@
-# print(10 > 9)
-# print(10 == 9)
-# print(10 < 9)
+#   Logical Operators
 
-# txt = "The best class in Saint Louis"
-# print("best" in txt)
+print("10 > 9 =", 10 > 9)  # true
+print("10 == 9 =", 10 == 9)  # false
+print("10 < 9 =", 10 < 9)  # false
 
+txt = "The best class in Saint Louis"
+print("Is 'best' in txt?", "best" in txt)  # true
+
+#   Lists in Python
+"""
+    ALWAYS a strict order 
+    BUT can be modified
+    CAN have duplicates in a list
+    Lists can contain ANY data type
+"""
 thisList = ["apple", "banana", "cherry"]
+print("thisList = ", thisList)
+print("\nLength of list = ", len(thisList))
+print("\nList item 1 = ", thisList[1])
 
-# print("\nLength of list = ", len(thisList))
-# print("\nList item 1 = ", thisList[1])
+#   Replace an element in a list
+thisList[1] = "blackcurrant"
+print("\nList with new item 1 = ", thisList)
 
-# thisList[1] = "blackcurrant"
-# print("\nList new item 1 = ", thisList[1])
+#   slice a piece of a list
+print("Slice of this list [1:3] ...", thisList[1:3])
+#   append item to a list
+thisList.append("orange")
+#   insert an item at an idex position in a list
+thisList.insert(1, "mandarin")
+print("\nThe transformed new List = ", thisList)
 
-# thisList[1:3] = ["blackcurrant", "watermelon"]
-# thisList.append("orange")
-# thisList.insert(1, "orange")
-# print("\nThe next new List = ", thisList)
+#   extend a list with another list
+tropical = ["mango", "pineapple", "papaya"]
+thisList.extend(tropical)
+print("\nThe extended list = ", thisList)
 
-# tropical = ["mango", "pineapple", "papaya"]
-# thisList.extend(tropical)
+#   removing items from a list
+thisList.remove("blackcurrant")
+thisList.pop(1)  # remove mandarin
+thisList.pop()  # remove papaya
+del thisList[0]  # remove apple
+print("\nList after removing items", thisList)
 
-# thisList.remove("banana")
-# thisList.pop(1)
-# thisList.pop()
-# del thisList[0]
-# del thisList
-# thisList.clear()
+#   Manipulate the order of a list
+thisList.reverse()
+print("thisList.reverse() = ", thisList)
+thisList.sort()
+print("thisList.sort() = ", thisList)
+thisList.sort(reverse=True)
+print("thisList.sort(reverse=True) = ", thisList)
 
-# thisList.reverse()
-# thisList.sort()
-# thisList.sort(reverse=True)
-
+#   Copy a list
 myList = thisList.copy()
-# print("\nThe next new List = ", thisList, myList)
+print("\nThe two lists are ... \n", thisList, "\nand ...\n", myList)
 
+myList.clear()
+print("\nmyList after clear ...\n", myList)
+del thisList
+# print("\thisList after clear ...", thisList)
+
+#   Concatenating lists together
 list1 = ["apple", "banana", "cherry"]
 list2 = ["kiwi", "strawberry", "grape"]
 list3 = list1 + list2
 
-
-print("\nThe new list3 = ", list3)
+print("\nThe new list3 = list1 + list2 ... ", list3)
