@@ -8,6 +8,7 @@ txt = "The best class in Saint Louis"
 print("Is 'best' in txt?", "best" in txt)  # true
 
 #   Lists in Python
+
 """
     ALWAYS a strict order 
     BUT can be modified
