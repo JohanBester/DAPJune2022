@@ -1,11 +1,9 @@
-myColors = {
-    '0': 'red',
-    '1': 'yellow',
-    '2': 'green',
-    '3': 'white'
-}
+myColors = {"0": "red", "1": "yellow", "2": "green", "3": "white"}
 
 print("\nPrinting my colorful Dictionary ... \n", myColors)
+
+# Add a color
+myColors[4] = "blue"
 
 myKeys = myColors.keys()
 print("\nPrinting my Keys ... \n", myKeys)

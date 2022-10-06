@@ -17,6 +17,7 @@ pd.options.display.max_rows = 9999
 # print("Data Frame Summary ...", df.info())
 # print("Data Frame to string ...", df.to_string())
 
+
 """
     There are 5 rows in the Calories column without data
     Nulls are bad
