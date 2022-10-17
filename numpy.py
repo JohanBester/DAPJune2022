@@ -2,36 +2,45 @@ import numpy as np
 
 a = np.array([[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 10, 12]])
 # print(a[0])
-# print(a)
+# print("a =", a)
+
 
 b = np.zeros(4)
-# print(b)
+# print("b =", b)
+
 
 d = np.empty(3)
-# print(d)
+# print("d =", d)
+
 
 e = np.arange(5)
-# print(e)
+# print("e =", e)
+
 
 f = np.arange(2, 9, 2)
-# print(f)
+# print("f =", f)
+
 
 g = np.linspace(0, 10, num=5)
-# print(g)
+print("g =", g)
+
 
 arr1 = np.array([2, 1, 5, 3, 7, 4, 6, 8])
 a1 = np.sort(arr1)
-# print(a1)
+# print("a1 =", a1)
+
 
 a2 = np.array([1, 2, 3, 4])
 b2 = np.array([5, 6, 7, 8])
 arr2 = np.concatenate((a2, b2))
-# print(arr2)
+# print("arr2 =", arr2)
+
 
 x = np.array([[1, 2], [3, 4]])
 y = np.array([[5, 6]])
 arr3 = np.concatenate((x, y), axis=0)
-# print(arr3)
+# print("arr3", arr3)
+
 
 array_example = np.array(
     [
@@ -42,11 +51,11 @@ array_example = np.array(
 )
 
 t = array_example.ndim
-print(t)
+print("t =", t)
 u = array_example.size
-print(u)
+print("u =", u)
 v = array_example.shape
-print(v)
+print("v =", v)
 
 
 aa = np.array([1, 2, 3, 4, 5])
