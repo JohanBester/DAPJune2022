@@ -8,40 +8,46 @@ print("a =", a)
 b = np.zeros(4)
 # print("b =", b)
 
+c = np.ones(2)
+# print("c =", c)
 
 d = np.empty(3)
 # print("d =", d)
 
 
+# Array of 5 numbers starting at 0
 e = np.arange(5)
 # print("e =", e)
 
 
+# Array of evenly inter-spaced values
+# start at 1st value,
+# Upto but not including the second value
+# By steps of the last value
 f = np.arange(2, 9, 2)
 # print("f =", f)
 
-
+# Create a Linearly spaced array
+# With values that are spaced linearly in a specified interval
+# from 1st value, up to 2nd value, with number of elements
 g = np.linspace(0, 10, num=5)
 # print("g =", g)
 
 
-arr1 = np.array([2, 1, 5, 3, 7, 4, 6, 8])
-a1 = np.sort(arr1)
-# print("a1 =", a1)
-
-
+# Concatenation
 a2 = np.array([1, 2, 3, 4])
 b2 = np.array([5, 6, 7, 8])
 arr2 = np.concatenate((a2, b2))
 # print("arr2 =", arr2)
 
-
+# More Concatenation
 x = np.array([[1, 2], [3, 4]])
 y = np.array([[5, 6]])
 arr3 = np.concatenate((x, y), axis=0)
 # print("arr3", arr3)
 
 
+#   Knowing Shape and size of NumPy arrays
 array_example = np.array(
     [
         [[0, 1, 2, 3], [4, 5, 6, 7]],
@@ -58,79 +64,6 @@ v = array_example.shape
 # print("v =", v)
 
 
-aa = np.array([1, 2, 3, 4, 5])
-# print("array a ...", aa)
-
-bb = np.zeros(4)
-# print("array b of zeros ...", bb)
-
-cc = np.ones(2)
-# print("array c of ones ...", cc)
-
-#   Creates an array whole initial content is random
-#   it depends on the state of memory.
-dd = np.empty(3)
-# print("array d empty ...", dd)
-
-#   array of 5 numbers starting at 0
-
-ee = np.arange(5)
-# print("array e of range ...", ee)
-
-#   Array of evenly inter-spaced values
-#   start at 1st value,
-#   Upto but not including the second value
-#   By steps of the last value
-
-ff = np.arange(2, 9, 2)
-# print("array f of inter-spaced values ...", ff)
-
-#   With values that are spaced linearly in a specified interval
-#   from 1st value, up to 2nd value, with number of elements
-
-gg = np.linspace(0, 10, num=5)
-# print("array g linearly spaced values ...", gg)
-
-#   Contains a range of evenly spaced intervals
-
-hh = np.arange(2, 9, 2)
-# print("array h evenly spaced intervals ...", hh)
-
-# Sorting an Array
-
-arr = np.array([2, 1, 5, 3, 7, 4, 6, 8])
-ii = np.sort(arr)
-# print("array i sorted ...", ii)
-
-#   Concatenation
-aaa = np.array([1, 2, 3, 4])
-bbb = np.array([5, 6, 7, 8])
-arrCombo = np.concatenate((aaa, bbb))
-# print("arrays combined ...", arrCombo)
-
-xx = np.array([[1, 2], [3, 4]])
-yy = np.array([[5, 6]])
-arrCombo2 = np.concatenate((xx, yy), axis=0)
-# print("array combo of multi dimensional arrays ...\n", arrCombo2)
-
-#   Knowing Shape and size of NumPy arrays
-
-array_example = np.array(
-    [
-        [[0, 1, 2, 3], [4, 5, 6, 7]],
-        [[0, 1, 2, 3], [4, 5, 6, 7]],
-        [[0, 1, 2, 3], [4, 5, 6, 7]],
-    ]
-)
-tt = array_example.ndim
-# print("Dimensions ...", tt)  # 3 (dimensions)
-
-uu = array_example.size
-# print("Axis and length ...", uu)  # 2, 4 (2 axis w/ length of 4)
-
-vv = array_example.shape
-# print("Dimensions, axis, length ...", vv)  # 3, 2, 4
-
 #   Reshaping arrays
 
 jj = np.arange(6)
@@ -139,8 +72,8 @@ jj = np.arange(6)
 kk = jj.reshape(3, 2)  # 3 axis w/ length of 2
 # print("array j reshaped (3,2)  ...\n", kk)
 
-#   Indexing and Slicing ...
 
+#   Indexing and Slicing Arrays ...
 data = np.array([1, 2, 3])
 aa2 = data[1]
 bb2 = data[0:2]
