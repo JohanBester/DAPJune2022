@@ -1,4 +1,4 @@
-#   Matplotlib
+#  matplotlib_basic.py
 
 import matplotlib.pyplot as plt
 
