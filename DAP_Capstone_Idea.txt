@@ -1,0 +1,17 @@
+
+DAP Capstone Idea
+==================
+
+Working on an idea to track language migration in the US, comparing data from last and most recent US Census data.
+
+This to answer the questions ...
+"How should businesses be positioning themselves to maximize engagement with the new and changing sociolinguistic demographic in the US marketplace"
+
+- Trying to figure out how to pull that data down from US Census Bureau
+- Looking to break down the language distribution by region
+- Plot out the socioeconomic strata/divisions in every language group
+- Looking at how that distribution has changed from census to census
+- Looking at how to augment that data from additional sources
+- Looking how to present that data graphically using maps and charts
+
+Not sure how much I'm gonna get done as my participation is currently limited.
