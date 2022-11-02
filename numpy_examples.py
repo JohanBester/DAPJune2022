@@ -29,7 +29,7 @@ f = np.arange(2, 9, 2)
 
 # Create a Linearly spaced array
 # With values that are spaced linearly in a specified interval
-# from 1st value, up to 2nd value, with number of elements
+# from 1st value, up to 2nd value, with specified number of elements
 g = np.linspace(0, 10, num=5)
 # print("g =", g)
 
